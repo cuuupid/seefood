@@ -151,9 +151,10 @@ images_to_test = [
 ]
 
 def main(_):
-  maybe_download_and_extract()
+#  maybe_download_and_extract()
   bool = False
   print(("\n")*4)
+  bool = run_inference_on_image('test/hotdog.jpg')
   for image in images_to_test:
       print("[*] Now testing "+image)
       bool=run_inference_on_image(image)
